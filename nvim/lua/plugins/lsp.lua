@@ -8,14 +8,16 @@ require("lazydev").setup({
 		},
 })
 
-require("mason").setup()
-
-require("mason-lspconfig").setup({
-		ensure_installed = { 
-      "lua_ls", 
-      "hls", 
-    },
-		automatic_installation = true,
-
+vim.lsp.config('hls', {
+  cmd = { 'haskell-language-server-wrapper', '--lsp' },
 })
+if vim.fn.executable('haskell-language-server-wrapper') == 1 then 
+  vim.lsp.enable('hls')
+end
 
+
+vim.lsp.config('lua_ls', {
+  cmd = { vim.fn.exepath('lua-language-server') },
+})
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("nil_ls")

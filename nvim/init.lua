@@ -19,8 +19,8 @@ vim.loader.enable() --  SPEEEEEEEEEEED 
 vim.call('plug#begin')
 
 Plug('neanias/everforest-nvim', { ['as'] = 'everforest' }) --colorscheme
-Plug('williamboman/mason.nvim') --mason package manager
-Plug('williamboman/mason-lspconfig.nvim') --mason lsp
+-- Plug('williamboman/mason.nvim') --mason package manager
+-- Plug('williamboman/mason-lspconfig.nvim') --mason lsp
 Plug('neovim/nvim-lspconfig') --LSP
 Plug('folke/lazydev.nvim') --luals configuration
 Plug('nvim-lualine/lualine.nvim') --statusline
