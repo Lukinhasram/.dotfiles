@@ -1,0 +1,146 @@
+/**
+ * @name system24 (everforest)
+ * @description tui-style discord theme. Simply applied everforest palette while keeping system24 mood..
+ * @author refact0r, Sophed, voxelfied, GrimalDev
+ * @version 2.0.0
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/system24
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+/* import theme modules */
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    --font: 'JetBrainsMono Nerd Font';
+    --code-font: 'JetBrainsMono Nerd Font';
+    font-weight: 300;
+    letter-spacing: -0.05ch;
+
+    --gap: 16px;
+    --divider-thickness: 4px;
+    --border-thickness: 3px;
+    --border-hover-transition: 0.5s ease;
+
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+
+    --custom-window-controls: off;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url('');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+
+    --background-image: off;
+    --background-image-url: url('');
+
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+
+    --small-user-panel: on;
+
+    --unrounding: on;
+
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: system24;
+
+    --panel-labels: on;
+    --label-color: var(--text-5);
+    --label-font-weight: 500;
+}
+
+/* color options */
+:root {
+    --colors: on;
+
+    /* text colors */
+    --text-0: #232a2e;
+    --text-1: #d3c6aa;
+    --text-2: #d3c6aa;
+    --text-3: #d3c6aa;
+    --text-4: #d3c6aa;
+    --text-5: #7a8478;
+
+    /* background and dark colors */
+    --bg-1: #2d353b;
+    --bg-2: #2d353b;
+    --bg-3: #2d353b;
+    --bg-4: #232a2e;
+    --hover: color-mix(in oklch, #7a8478, transparent 80%);
+    --active: color-mix(in oklch, #7a8478, transparent 60%);
+    --active-2: color-mix(in oklch, #7a8478, transparent 40%);
+    --message-hover: var(--hover);
+
+    /* accent colors */
+    --accent-1: #89b482;
+    --accent-2: #89b482;
+    --accent-3: #89b482;
+    --accent-4: #a7c080;
+    --accent-5: #7fbbb3;
+    --accent-new: #e67e80;
+    --mention: linear-gradient(to right, color-mix(in oklch, #89b482, transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in oklch, #89b482, transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in oklch, #7a8478, transparent 60%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in oklch, #7a8478, transparent 80%) 40%, transparent);
+
+    /* status indicator colors */
+    --online: #a7c080;
+    --dnd: #e67e80;
+    --idle: #dbbc7f;
+    --streaming: #d699b6;
+    --offline: #7a8478;
+
+    /* border colors */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: #89b482;
+    --button-border: hsl(220, 0%, 100%, 0.1);
+
+    /* base colors */
+    --red-1: #e67e80;
+    --red-2: #e67e80;
+    --red-3: #e67e80;
+    --red-4: #e67e80;
+    --red-5: #e67e80;
+
+    --green-1: #a7c080;
+    --green-2: #a7c080;
+    --green-3: #a7c080;
+    --green-4: #a7c080;
+    --green-5: #a7c080;
+
+    --blue-1: #7fbbb3;
+    --blue-2: #7fbbb3;
+    --blue-3: #7fbbb3;
+    --blue-4: #7fbbb3;
+    --blue-5: #7fbbb3;
+
+    --yellow-1: #dbbc7f;
+    --yellow-2: #dbbc7f;
+    --yellow-3: #dbbc7f;
+    --yellow-4: #dbbc7f;
+    --yellow-5: #dbbc7f;
+
+    --purple-1: #d699b6;
+    --purple-2: #d699b6;
+    --purple-3: #d699b6;
+    --purple-4: #d699b6;
+    --purple-5: #d699b6;
+}
