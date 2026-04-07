@@ -1,0 +1,107 @@
+{
+  "profiles": [
+    {
+      "id": "study",
+      "label": "Study · Deep Work",
+      "tock": {
+        "stop_current": true,
+        "project": "Study",
+        "description": "Focused session",
+        "tags": [
+          "focus-mode",
+          "study"
+        ]
+      },
+      "workspaces": {
+        "1": {
+          "windows": [
+            {
+              "app": "firefox",
+              "args": [
+                "--new-window",
+                "about:blank"
+              ]
+            }
+          ]
+        },
+        "2": {
+          "windows": [
+            {
+              "app": "zotero"
+            },
+            {
+              "app": "obsidian"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dev-backend",
+      "label": "Dev · Backend",
+      "tock": {
+        "stop_current": true,
+        "project": "Backend",
+        "description": "Coding session",
+        "tags": [
+          "focus-mode",
+          "dev",
+          "backend"
+        ]
+      },
+      "workspaces": {
+        "1": {
+          "windows": [
+            {
+              "app": "kitty"
+            }
+          ]
+        },
+        "2": {
+          "windows": [
+            {
+              "app": "firefox",
+              "args": [
+                "--new-window",
+                "https://docs.nixos.org"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "writing",
+      "label": "Writing · Notes",
+      "tock": {
+        "stop_current": true,
+        "project": "Writing",
+        "description": "Writing session",
+        "tags": [
+          "focus-mode",
+          "writing"
+        ]
+      },
+      "workspaces": {
+        "1": {
+          "windows": [
+            {
+              "app": "obsidian"
+            }
+          ]
+        },
+        "2": {
+          "windows": [
+            {
+              "app": "firefox",
+              "args": [
+                "--new-window",
+                "about:blank"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
