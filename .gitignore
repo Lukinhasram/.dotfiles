@@ -2,5 +2,6 @@ vesktop/Crashpad/
 vesktop/sessionData/
 vesktop/SingletonSocket
 vesktop/SingletonLock
+vesktop/SingletonCookie
 vesktop/state.json
 
