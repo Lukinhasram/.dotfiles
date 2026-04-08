@@ -1,15 +1,16 @@
 {
   "profiles": [
     {
-      "id": "study",
-      "label": "Study · Deep Work",
+      "id": "euf",
+      "label": "Estudo - UFAL",
       "tock": {
         "stop_current": true,
-        "project": "Study",
-        "description": "Focused session",
+        "project": "Estudo - UFAL",
+        "description": "Sessão de foco",
         "tags": [
-          "focus-mode",
-          "study"
+          "foco",
+          "estudo",
+          "ufal"
         ]
       },
       "workspaces": {
@@ -19,7 +20,7 @@
               "app": "firefox",
               "args": [
                 "--new-window",
-                "about:blank"
+                "https://sigaa.sig.ufal.br/sigaa/portais/discente/discente.jsf"
               ]
             }
           ]
@@ -36,68 +37,53 @@
         }
       }
     },
+
     {
-      "id": "dev-backend",
-      "label": "Dev · Backend",
+      "id": "tcc",
+      "label": "TCC",
       "tock": {
         "stop_current": true,
-        "project": "Backend",
-        "description": "Coding session",
+        "project": "TCC",
+        "description": "Pesquisa e estudo para o TCC",
         "tags": [
-          "focus-mode",
-          "dev",
-          "backend"
+          "tcc",
+          "estudo",
+          "pesquisa"
         ]
       },
       "workspaces": {
         "1": {
           "windows": [
             {
-              "app": "kitty"
+              "app": "firefox",
+              "args": [
+                "--new-window",
+                "https://sigaa.sig.ufal.br/sigaa/portais/discente/discente.jsf"
+              ]
             }
           ]
         },
         "2": {
           "windows": [
             {
-              "app": "firefox",
-              "args": [
-                "--new-window",
-                "https://docs.nixos.org"
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "writing",
-      "label": "Writing · Notes",
-      "tock": {
-        "stop_current": true,
-        "project": "Writing",
-        "description": "Writing session",
-        "tags": [
-          "focus-mode",
-          "writing"
-        ]
-      },
-      "workspaces": {
-        "1": {
-          "windows": [
+              "app": "zotero"
+            },
             {
               "app": "obsidian"
             }
           ]
         },
-        "2": {
+        "3": {
           "windows": [
             {
-              "app": "firefox",
+              "app": "tmux",
               "args": [
-                "--new-window",
-                "about:blank"
+                "attach",
+                "-t tcc"
               ]
+            },
+            {
+              "app": "obsidian"
             }
           ]
         }

@@ -69,7 +69,7 @@ start_focus() {
   fi
 
   local selected_entry selected_id profile
-  selected_entry="$(jq -r '.profiles[] | "\(.id)\t\(.label)"' "$CONFIG_FILE" | fuzzel --dmenu --prompt 'Focus Mode > ' || true)"
+  selected_entry="$(jq -r '.profiles[] | "\(.id)\t\(.label)"' "$CONFIG_FILE" | fuzzel --dmenu --prompt 'λ ' || true)"
   
   if [ -z "$selected_entry" ]; then
     exit 0
@@ -83,7 +83,6 @@ start_focus() {
     exit 1
   fi
 
-  # Apply the focus color override
   set_focus_color "$FOCUS_ACTIVE_COLOR"
 
   if command -v tock >/dev/null 2>&1; then
