@@ -8,6 +8,9 @@ edit = [
 image-viewer = [
 	{ run = "gthumb \"$@\"", block = true, desc = "Open with gthumb" }
 ]
+sioyek = [
+  { run = 'sioyek "$@"', orphan = true, desc = "Open in Sioyek" }
+]
 
 [open]
 rules = [
@@ -22,4 +25,6 @@ rules = [
   { name = "*.yml", use = "edit" },
   { name = "*.sh", use = "edit" },
 	{ mime = "image/*", use = "image-viewer" },
+  { mime = "application/pdf", use = "sioyek" },
+  { mime = "application/epub+zip", use = "sioyek" },
 ]
