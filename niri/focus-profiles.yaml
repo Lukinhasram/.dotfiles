@@ -1,0 +1,33 @@
+profiles:
+  - id: euf
+    label: Estudo - UFAL
+    tock:
+      stop_current: true
+      project: Estudo - UFAL
+      description: Sessão de foco
+      tags:
+        - foco
+        - estudo
+        - ufal
+
+  - id: tcc
+    label: TCC
+    tock:
+      stop_current: true
+      project: TCC
+      description: Pesquisa e estudo para o TCC
+      tags:
+        - tcc
+        - estudo
+        - pesquisa
+
+  - id: krt
+    label: Dev - Karuta
+    tock:
+      stop_current: true
+      project: Dev - Karuta
+      description: Desenvolvimento/contribuições ao Karuta
+      tags:
+        - desenvolvimento
+        - estudo
+        - compiladores
